@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "SQTabbarViewController.h"
+#import "SQGuideViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
+    [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
+    if (![kUserDefaults objectForKey:@"isFirst"]) {
+        SQGuideViewController *vc = [[SQGuideViewController alloc]init];
+        [vc showGuideViewWithImageArray:@[@"guide_image1",@"guide_image2",@"guide_image3"] WindowRootController:[SQTabbarViewController new]];
+        self.window.rootViewController = vc;
+    }
+    else
+    {
+        SQTabbarViewController * vc = [[SQTabbarViewController alloc]init];
+        self.window.rootViewController = vc;
+    }
+    
     return YES;
 }
 
@@ -49,3 +64,4 @@
 
 
 @end
+

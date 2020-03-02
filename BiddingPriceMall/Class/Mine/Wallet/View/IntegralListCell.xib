@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="integral_cell" rowHeight="100" id="Ahg-4w-jNv" customClass="IntegralListCell">
+            <rect key="frame" x="0.0" y="0.0" width="468" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ahg-4w-jNv" id="DDv-22-dOf">
+                <rect key="frame" x="0.0" y="0.0" width="468" height="102.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAW-vT-fyG">
+                        <rect key="frame" x="5" y="0.0" width="458" height="102.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="GRQ-bv-eLt">
+                                <rect key="frame" x="0.0" y="0.0" width="458" height="102.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-09-03 14:35:10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcV-4g-0Pu">
+                                <rect key="frame" x="20" y="15" width="125" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="IZj-3Q-0cX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="挂单卖出" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fet-cY-WFl">
+                                <rect key="frame" x="20" y="40" width="53.5" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="GNf-gG-J5g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35h-X3-JqX">
+                                <rect key="frame" x="20" y="66" width="413" height="21.5"/>
+                                <string key="text">订单号123456486584632187462
+
+                        </string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+180.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVp-n6-9o6">
+                                <rect key="frame" x="378" y="14.5" width="55" height="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.054901960780000002" green="0.5450980392" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fet-cY-WFl" firstAttribute="top" secondItem="LcV-4g-0Pu" secondAttribute="bottom" constant="10" id="6Cb-Qy-8ck"/>
+                            <constraint firstAttribute="trailing" secondItem="35h-X3-JqX" secondAttribute="trailing" constant="25" id="7FD-0I-G9o"/>
+                            <constraint firstAttribute="trailing" secondItem="35h-X3-JqX" secondAttribute="trailing" constant="25" id="KQv-LW-cXU"/>
+                            <constraint firstAttribute="bottom" secondItem="GRQ-bv-eLt" secondAttribute="bottom" id="WxX-Hq-16f"/>
+                            <constraint firstAttribute="trailing" secondItem="GRQ-bv-eLt" secondAttribute="trailing" id="XGT-jh-af0"/>
+                            <constraint firstAttribute="bottom" secondItem="35h-X3-JqX" secondAttribute="bottom" constant="15" id="XnW-12-Bfi"/>
+                            <constraint firstItem="GRQ-bv-eLt" firstAttribute="top" secondItem="zAW-vT-fyG" secondAttribute="top" id="b67-C2-VbL"/>
+                            <constraint firstItem="fet-cY-WFl" firstAttribute="leading" secondItem="LcV-4g-0Pu" secondAttribute="leading" id="dAs-YN-voE"/>
+                            <constraint firstItem="GRQ-bv-eLt" firstAttribute="leading" secondItem="zAW-vT-fyG" secondAttribute="leading" id="fe6-C5-h3h"/>
+                            <constraint firstItem="LcV-4g-0Pu" firstAttribute="top" secondItem="zAW-vT-fyG" secondAttribute="top" constant="15" id="hSq-Ra-1bx"/>
+                            <constraint firstItem="35h-X3-JqX" firstAttribute="leading" secondItem="fet-cY-WFl" secondAttribute="leading" id="hfK-oc-2DV"/>
+                            <constraint firstItem="IVp-n6-9o6" firstAttribute="centerY" secondItem="LcV-4g-0Pu" secondAttribute="centerY" id="ocf-pf-0It"/>
+                            <constraint firstItem="LcV-4g-0Pu" firstAttribute="leading" secondItem="zAW-vT-fyG" secondAttribute="leading" constant="20" id="owi-Vh-uzs"/>
+                            <constraint firstAttribute="trailing" secondItem="IVp-n6-9o6" secondAttribute="trailing" constant="25" id="tui-Vn-01m"/>
+                            <constraint firstItem="35h-X3-JqX" firstAttribute="top" secondItem="fet-cY-WFl" secondAttribute="bottom" constant="10" id="xdl-jD-tXC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="zAW-vT-fyG" secondAttribute="trailing" constant="5" id="3LT-dD-649"/>
+                    <constraint firstItem="zAW-vT-fyG" firstAttribute="leading" secondItem="DDv-22-dOf" secondAttribute="leading" constant="5" id="P7n-QP-4fs"/>
+                    <constraint firstItem="zAW-vT-fyG" firstAttribute="top" secondItem="DDv-22-dOf" secondAttribute="top" id="SbE-bB-uVO"/>
+                    <constraint firstAttribute="bottom" secondItem="zAW-vT-fyG" secondAttribute="bottom" id="xnG-hE-Q6v"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="BF7-4t-ZGF"/>
+            <connections>
+                <outlet property="channel" destination="fet-cY-WFl" id="BTH-Gd-KqQ"/>
+                <outlet property="createTime" destination="LcV-4g-0Pu" id="0XL-BX-Ddm"/>
+                <outlet property="integral" destination="IVp-n6-9o6" id="7to-sw-scH"/>
+                <outlet property="remark" destination="35h-X3-JqX" id="KRf-ec-TfD"/>
+            </connections>
+            <point key="canvasLocation" x="239.13043478260872" y="102.79017857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="background_1" width="359.5" height="98.5"/>
+    </resources>
+</document>
